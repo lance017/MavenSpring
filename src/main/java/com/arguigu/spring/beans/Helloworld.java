@@ -12,6 +12,6 @@ public class Helloworld {
     }
 
     public void hello() {
-        System.out.println("hello" + name);
+        System.out.println("hello   " + name);
     }
 }
