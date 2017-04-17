@@ -27,6 +27,12 @@
       <artifactId>spring-beans</artifactId>
       <version>4.3.7.RELEASE</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-util -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-utils</artifactId>
+      <version>4.3.7.RELEASE</version>
+    </dependency>
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
     <dependency>
       <groupId>org.springframework</groupId>

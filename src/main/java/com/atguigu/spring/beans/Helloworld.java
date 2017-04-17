@@ -1,4 +1,4 @@
-package com.arguigu.spring.beans;
+package com.atguigu.spring.beans;
 
 /**
  * Created by lance017 on 2017/4/14.
@@ -13,5 +13,9 @@ public class Helloworld {
 
     public void hello() {
         System.out.println("hello   " + name);
+    }
+
+    public Helloworld() {
+
     }
 }
