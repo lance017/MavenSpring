@@ -1,0 +1,12 @@
+配置文件为 spring-zhujie.xml
+
+@Component      基本注解，标志了一个受 Spring 管理的组件
+@Respository    标识持久层组件
+@Service        标识服务层（业务层）组件
+@Controller     标识表现层组件
+
+@Controller(value="你需要的名字")
+
+@Autowired 注解自动装配具有兼容类型的单个 bean 属性，放在 set 方法上也可以
+@Autowired(required = false) 找不到匹配的 bean 属性时，默认为 null，否则抛出异常
+@Qualifier("userRepositoryImpl")   装配的接口时，存在两个实现的类，用 Qualifier 来指定 名称
