@@ -17,7 +17,7 @@ public class Main {
         System.out.println(controller);
         controller.execute();
 
-        UserRepositoryImpl repository = (UserRepositoryImpl) context.getBean("userRepository");
+        UserRepositoryImpl repository = (UserRepositoryImpl) context.getBean("userRepositoryImpl");
         System.out.println(repository);
 
         UserService service = (UserService) context.getBean("userService");
