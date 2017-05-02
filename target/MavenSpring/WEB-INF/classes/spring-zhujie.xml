@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--指定 Spring IOC 容器扫描得包-->
+    <context:component-scan base-package="com.atguigu.spring.zhujie"></context:component-scan>
+
+    <!--resource-pattern-->
+    <!--只扫描 TestObject， 也可以指定 package-->
+    <!--<context:component-scan base-package="com.atguigu.spring.zhujie" resource-pattern="TestObject.class"></context:component-scan>-->
+
+
+
+    <!--context:exclude-filter-->
+    <!--不包含 Controller 注解的类-->
+    <!--
+    <context:component-scan base-package="com.atguigu.spring.zhujie">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"></context:exclude-filter>
+    </context:component-scan>
+    -->
+
+    <!--不知道为啥失效了-->
+    <!--context:include-filter-->
+    <!--只包含 Component 注解的类,配合 use-default-filters 使用-->
+    <!--
+    <context:component-scan base-package="com.atguigu.spring.zhujie" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"></context:include-filter>
+    </context:component-scan>
+    -->
+
+    <!--context:exclude-filter-->
+    <!--不包含 UserRepository 接口及实现的类-->
+    <!--<context:component-scan base-package="com.atguigu.spring.zhujie">-->
+        <!--<context:exclude-filter type="assignable" expression="com.atguigu.spring.zhujie.UserRepository"></context:exclude-filter>-->
+    <!--</context:component-scan>-->
+
+</beans>
